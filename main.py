@@ -54,6 +54,9 @@ print("Version 1")
 
 print("V2")
 
+print("V3")
+print("V3.1")
+
 # Problem unsolve
 # < 1 in this program cannot perform on -4.082
 
