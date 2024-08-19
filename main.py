@@ -50,7 +50,7 @@ def main():
 
 main()
 
-
+print("Version 1")
 
 
 # Problem unsolve
