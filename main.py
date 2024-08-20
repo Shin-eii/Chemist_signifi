@@ -6,11 +6,12 @@ non_zero = [str(i) for i in range(1,10)]
 def count_sig(num):
     # step 1: find decimal first 
     if '.' not in num:
-        num = abs(int(num))
-        num = str(num)
-        ans = len(num)
-        #print(ans)
-        return ans
+        num = abs(int(num)) # do abs to get rid neg num
+        num = str(num) # change it back to str
+        num = num[::-1] # revert it
+        num = str(int(num)) # to int to get rid of trailing 0 and change it back
+        return len(num)
+    
     else:
         # In this step we will take care of the FLOAT
 
@@ -52,6 +53,4 @@ main()
 
 
 
-# Problem unsolve
-# < 1 in this program cannot perform on -4.082
 
